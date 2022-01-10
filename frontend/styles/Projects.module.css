@@ -27,7 +27,7 @@
   height: 100%;
   width: 100%;
 
-  background-image: url("/project1.png");
+  background-image: url("/project2.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -41,10 +41,16 @@
 
 .project h2 {
   font-size: 12px;
+
+  display: flex;
+  align-items: center;
 }
 
 .project h3 {
   font-size: 10px;
+
+  display: flex;
+  align-items: center;
 }
 
 .project p {

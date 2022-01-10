@@ -1,5 +1,8 @@
 import projectsStyles from "../styles/Projects.module.css";
 
+import { AiOutlinePicCenter } from "react-icons/ai";
+import { HiOutlineUserCircle } from "react-icons/hi";
+
 import Image from "next/image";
 
 const Projects = () => {
@@ -10,8 +13,12 @@ const Projects = () => {
           {/* <Image src="/project1.png" layout="fill" /> */}
         </div>
         <div className={projectsStyles.info}>
-          <h2>Projekat: Dnevni Boravak - June</h2>
-          <h3>Dizajner: Marko Markovic</h3>
+          <h2>
+            <AiOutlinePicCenter /> Projekat: Dnevni Boravak - June
+          </h2>
+          <h3>
+            <HiOutlineUserCircle /> Dizajner: Marko Markovic
+          </h3>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed aliquam
             metus eget nunc volutpat accumsan. Nulla facilisi. Proin dui dui,
@@ -31,8 +38,12 @@ const Projects = () => {
           {/* <Image src="/project1.png" layout="fill" /> */}
         </div>
         <div className={projectsStyles.info}>
-          <h2>Projekat: Dnevni Boravak - June</h2>
-          <h3>Dizajner: Marko Markovic</h3>
+          <h2>
+            <AiOutlinePicCenter /> Projekat: Dnevni Boravak - June
+          </h2>
+          <h3>
+            <HiOutlineUserCircle /> Dizajner: Marko Markovic
+          </h3>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed aliquam
             metus eget nunc volutpat accumsan. Nulla facilisi. Proin dui dui,
@@ -52,8 +63,12 @@ const Projects = () => {
           {/* <Image src="/project1.png" layout="fill" /> */}
         </div>
         <div className={projectsStyles.info}>
-          <h2>Projekat: Dnevni Boravak - June</h2>
-          <h3>Dizajner: Marko Markovic</h3>
+          <h2>
+            <AiOutlinePicCenter /> Projekat: Dnevni Boravak - June
+          </h2>
+          <h3>
+            <HiOutlineUserCircle /> Dizajner: Marko Markovic
+          </h3>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed aliquam
             metus eget nunc volutpat accumsan. Nulla facilisi. Proin dui dui,
