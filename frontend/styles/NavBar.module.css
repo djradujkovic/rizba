@@ -1,6 +1,7 @@
 .navbar {
   position: fixed;
   top: 0;
+  left: 0;
 
   width: 100vw;
   height: 5rem;
@@ -43,10 +44,50 @@
 .navbar ul {
   /* display: flex; */
   /* gap: 1rem; */
+  position: absolute;
+  top: 4rem;
+  left: 0;
 
-  display: none;
+  padding: 0rem;
+  padding-block: 1rem;
+
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  place-content: center;
+  gap: 1rem;
+
+  text-align: center;
+
+  background-color: rgba(255, 255, 255, 0.85);
+
+  opacity: 0;
+  transform: translateY(0%) scaleY(0);
+  transform-origin: top;
+
+  transition: opacity 500ms, transform 500ms;
 
   list-style: none;
+}
+
+.navbar ul.isOpen {
+  display: flex;
+  opacity: 1;
+  transform: translateY(0) scaleY(1);
+}
+
+.navbar li {
+  padding: 1rem;
+
+  cursor: pointer;
+
+  transition: 250ms background-color, 250ms color;
+}
+
+.navbar li:hover {
+  background-color: silver;
+  color: white;
 }
 
 .navBtn2 {

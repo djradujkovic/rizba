@@ -22,7 +22,9 @@ const NavBar = () => {
   return (
     <nav
       className={
-        background
+        isOpen
+          ? navStyles.navbar + " " + navStyles.background
+          : background
           ? navStyles.navbar + " " + navStyles.background
           : navStyles.navbar
       }
@@ -40,15 +42,13 @@ const NavBar = () => {
         <span className={navStyles.bar}></span>
         <span className={navStyles.bar}></span>
       </div>
-      {isOpen && (
-        <ul>
-          <li>Pocetna</li>
-          <li>Projekti</li>
-          <li>Dizajneri</li>
-          <li>O nama</li>
-          <li>Kontakt</li>
-        </ul>
-      )}
+      <ul className={isOpen && navStyles.isOpen}>
+        <li>Pocetna</li>
+        <li>Projekti</li>
+        <li>Dizajneri</li>
+        <li>O nama</li>
+        <li>Kontakt</li>
+      </ul>
     </nav>
   );
 };
