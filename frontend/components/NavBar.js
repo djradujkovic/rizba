@@ -43,7 +43,7 @@ const NavBar = () => {
         <span className={navStyles.bar}></span>
       </div>
       <ul className={isOpen && navStyles.isOpen}>
-        <li>Pocetna</li>
+        <li>Početna</li>
         <li>Projekti</li>
         <li>Dizajneri</li>
         <li>O nama</li>
